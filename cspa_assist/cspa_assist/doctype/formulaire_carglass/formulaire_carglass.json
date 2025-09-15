@@ -1,0 +1,189 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CARGLASS-{YYYY}-{#####}",
+ "creation": "2025-09-10 22:17:25.937021",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "informations_de_lassur\u00e9__conducteur_section",
+  "num_identit\u00e9_national",
+  "prenom",
+  "nom",
+  "column_break_ojdx",
+  "numero",
+  "email",
+  "d\u00e9tails_de_la_police_section",
+  "compagnie_dassurance",
+  "num_de_police",
+  "column_break_nsvr",
+  "date_deffet",
+  "date_d\u00e9ch\u00e9ance",
+  "donn\u00e9es_v\u00e9hicule_section",
+  "marque",
+  "mod\u00e8le",
+  "column_break_jrle",
+  "immatriculation",
+  "couleur",
+  "image_des_documents_section",
+  "img_contrat",
+  "column_break_yceh",
+  "img_permis",
+  "column_break_axsq",
+  "img_carte_grise"
+ ],
+ "fields": [
+  {
+   "fieldname": "informations_de_lassur\u00e9__conducteur_section",
+   "fieldtype": "Section Break",
+   "label": " Informations de l'assur\u00e9 / conducteur"
+  },
+  {
+   "columns": 2,
+   "fieldname": "num_identit\u00e9_national",
+   "fieldtype": "Data",
+   "label": " Num Identit\u00e9 National "
+  },
+  {
+   "fieldname": "prenom",
+   "fieldtype": "Data",
+   "label": "Prenom",
+   "options": "Name"
+  },
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "label": "Nom",
+   "options": "Name"
+  },
+  {
+   "fieldname": "column_break_ojdx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "numero",
+   "fieldtype": "Data",
+   "label": "Numero",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "d\u00e9tails_de_la_police_section",
+   "fieldtype": "Section Break",
+   "label": " D\u00e9tails de la police"
+  },
+  {
+   "fieldname": "compagnie_dassurance",
+   "fieldtype": "Data",
+   "label": "Compagnie d'assurance"
+  },
+  {
+   "fieldname": "num_de_police",
+   "fieldtype": "Data",
+   "label": " Num de Police "
+  },
+  {
+   "fieldname": "column_break_nsvr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_deffet",
+   "fieldtype": "Data",
+   "label": " Date d'effet "
+  },
+  {
+   "fieldname": "date_d\u00e9ch\u00e9ance",
+   "fieldtype": "Data",
+   "label": " Date d'\u00e9ch\u00e9ance"
+  },
+  {
+   "fieldname": "donn\u00e9es_v\u00e9hicule_section",
+   "fieldtype": "Section Break",
+   "label": " Donn\u00e9es V\u00e9hicule"
+  },
+  {
+   "fieldname": "marque",
+   "fieldtype": "Data",
+   "label": "Marque"
+  },
+  {
+   "fieldname": "mod\u00e8le",
+   "fieldtype": "Data",
+   "label": "Mod\u00e8le"
+  },
+  {
+   "fieldname": "column_break_jrle",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "immatriculation",
+   "fieldtype": "Data",
+   "label": " Immatriculation "
+  },
+  {
+   "fieldname": "couleur",
+   "fieldtype": "Data",
+   "label": "Couleur"
+  },
+  {
+   "fieldname": "image_des_documents_section",
+   "fieldtype": "Section Break",
+   "label": " Image des documents"
+  },
+  {
+   "fieldname": "img_contrat",
+   "fieldtype": "Attach Image",
+   "label": " Image Contrat assurance"
+  },
+  {
+   "fieldname": "column_break_yceh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "img_permis",
+   "fieldtype": "Attach Image",
+   "label": " Image de permis de conduire"
+  },
+  {
+   "fieldname": "column_break_axsq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "img_carte_grise",
+   "fieldtype": "Attach Image",
+   "label": " Image carte grise v\u00e9hicule"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-10 23:10:11.660656",
+ "modified_by": "Administrator",
+ "module": "Cspa Assist",
+ "name": "Formulaire CarGlass",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
