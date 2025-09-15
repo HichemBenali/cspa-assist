@@ -4,6 +4,7 @@ app_publisher = "SARL MYNDALL"
 app_description = "CS & PA Assist"
 app_email = "contact@myndall.com"
 app_license = "unlicense"
+app_icon = "icon.png"   # or path to your own
 
 # Apps
 # ------------------

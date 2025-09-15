@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:numero_de_police",
  "creation": "2025-09-10 23:26:04.234004",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -22,7 +23,8 @@
   {
    "fieldname": "numero_de_police",
    "fieldtype": "Data",
-   "label": "Numero de police"
+   "label": "Numero de police",
+   "unique": 1
   },
   {
    "fieldname": "date_debut",
@@ -48,10 +50,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-10 23:36:20.131756",
+ "modified": "2025-09-15 15:51:26.267726",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
  "name": "Police Assurance Auto",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

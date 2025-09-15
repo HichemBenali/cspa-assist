@@ -6,28 +6,300 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "informations_de_lassur\u00e9__conducteur_section",
+  "num_identit\u00e9_national",
+  "prenom",
+  "nom",
+  "column_break_ojdx",
+  "numero",
+  "email",
+  "d\u00e9tails_de_la_police_section",
+  "num_de_police",
   "compagnie_dassurance",
-  "code_assurance"
+  "code_assurance",
+  "column_break_nsvr",
+  "date_deffet",
+  "date_d\u00e9ch\u00e9ance",
+  "donn\u00e9es_v\u00e9hicule_section",
+  "ref",
+  "immatriculation",
+  "mod\u00e8le",
+  "column_break_jrle",
+  "marque",
+  "couleur",
+  "image_des_documents_section",
+  "img_contrat",
+  "column_break_yceh",
+  "img_permis",
+  "column_break_axsq",
+  "img_carte_grise",
+  "amended_from",
+  "sinistre_tab",
+  "description_du_sinistre",
+  "services_tab",
+  "services",
+  "commentaires_tab",
+  "commentaires",
+  "prestataire_tab",
+  "observations",
+  "avant_reparations_section",
+  "image_1",
+  "image_2",
+  "image_3",
+  "apres_reparations_section",
+  "after_img_1",
+  "after_img_2",
+  "after_img_3"
  ],
  "fields": [
   {
+   "fieldname": "informations_de_lassur\u00e9__conducteur_section",
+   "fieldtype": "Section Break",
+   "label": " Informations de l'assur\u00e9 / conducteur"
+  },
+  {
+   "columns": 2,
+   "fieldname": "num_identit\u00e9_national",
+   "fieldtype": "Data",
+   "label": " Num Identit\u00e9 National "
+  },
+  {
+   "fieldname": "prenom",
+   "fieldtype": "Data",
+   "label": "Prenom",
+   "options": "Name"
+  },
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "label": "Nom",
+   "options": "Name"
+  },
+  {
+   "fieldname": "column_break_ojdx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "numero",
+   "fieldtype": "Data",
+   "label": "Numero",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "d\u00e9tails_de_la_police_section",
+   "fieldtype": "Section Break",
+   "label": " D\u00e9tails de la police"
+  },
+  {
+   "fetch_from": "num_de_police.compagnie_dassurance",
+   "fetch_if_empty": 1,
    "fieldname": "compagnie_dassurance",
    "fieldtype": "Link",
-   "label": "Compagnie D'assurance",
+   "label": "Compagnie d'assurance",
    "options": "Assurance"
+  },
+  {
+   "fieldname": "num_de_police",
+   "fieldtype": "Link",
+   "label": " Num de Police ",
+   "options": "Police Assurance Auto"
+  },
+  {
+   "fieldname": "column_break_nsvr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "num_de_police.date_debut",
+   "fieldname": "date_deffet",
+   "fieldtype": "Read Only",
+   "label": " Date d'effet "
+  },
+  {
+   "fetch_from": "num_de_police.date_echance",
+   "fieldname": "date_d\u00e9ch\u00e9ance",
+   "fieldtype": "Read Only",
+   "label": " Date d'\u00e9ch\u00e9ance"
+  },
+  {
+   "fieldname": "donn\u00e9es_v\u00e9hicule_section",
+   "fieldtype": "Section Break",
+   "label": " Donn\u00e9es V\u00e9hicule"
+  },
+  {
+   "fetch_from": "ref.marque",
+   "fieldname": "marque",
+   "fieldtype": "Read Only",
+   "label": "Marque"
+  },
+  {
+   "fetch_from": "ref.modele",
+   "fieldname": "mod\u00e8le",
+   "fieldtype": "Read Only",
+   "label": "Mod\u00e8le"
+  },
+  {
+   "fieldname": "column_break_jrle",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "ref.immatriculation",
+   "fieldname": "immatriculation",
+   "fieldtype": "Read Only",
+   "label": "Immatriculation",
+   "options": "Police Auto Data"
+  },
+  {
+   "fetch_from": "ref.couleur",
+   "fieldname": "couleur",
+   "fieldtype": "Read Only",
+   "label": "Couleur"
+  },
+  {
+   "fieldname": "image_des_documents_section",
+   "fieldtype": "Section Break",
+   "label": " Image des documents"
+  },
+  {
+   "fieldname": "img_contrat",
+   "fieldtype": "Attach Image",
+   "label": " Image Contrat assurance"
+  },
+  {
+   "fieldname": "column_break_yceh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "img_permis",
+   "fieldtype": "Attach Image",
+   "label": " Image de permis de conduire"
+  },
+  {
+   "fieldname": "column_break_axsq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "img_carte_grise",
+   "fieldtype": "Attach Image",
+   "label": " Image carte grise v\u00e9hicule"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Demande Car Glass",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   },
   {
    "fetch_from": "compagnie_dassurance.code",
    "fieldname": "code_assurance",
    "fieldtype": "Read Only",
-   "hidden": 1,
-   "label": "Code Compagnie D'assurance"
+   "label": "Code Assurance",
+   "options": "Assurance"
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Link",
+   "label": " Ref",
+   "options": "Police Auto Data"
+  },
+  {
+   "fieldname": "sinistre_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sinistre"
+  },
+  {
+   "fieldname": "description_du_sinistre",
+   "fieldtype": "Long Text",
+   "label": "Description du sinistre"
+  },
+  {
+   "fieldname": "services_tab",
+   "fieldtype": "Tab Break",
+   "label": "Services"
+  },
+  {
+   "fieldname": "commentaires_tab",
+   "fieldtype": "Tab Break",
+   "label": "Commentaires"
+  },
+  {
+   "fieldname": "prestataire_tab",
+   "fieldtype": "Tab Break",
+   "label": "Prestataire"
+  },
+  {
+   "fieldname": "services",
+   "fieldtype": "Table",
+   "label": "Services",
+   "options": "Services Prestation Car Glass"
+  },
+  {
+   "fieldname": "commentaires",
+   "fieldtype": "Table",
+   "label": "Commentaires",
+   "options": "Commentaires Prestation"
+  },
+  {
+   "fieldname": "observations",
+   "fieldtype": "Small Text",
+   "label": "Observations"
+  },
+  {
+   "fieldname": "avant_reparations_section",
+   "fieldtype": "Section Break",
+   "label": "Avant reparations"
+  },
+  {
+   "fieldname": "image_1",
+   "fieldtype": "Attach Image",
+   "label": "Image 1"
+  },
+  {
+   "fieldname": "image_2",
+   "fieldtype": "Attach Image",
+   "label": "image 2"
+  },
+  {
+   "fieldname": "image_3",
+   "fieldtype": "Attach Image",
+   "label": "Image 3"
+  },
+  {
+   "fieldname": "apres_reparations_section",
+   "fieldtype": "Section Break",
+   "label": "Apres reparations"
+  },
+  {
+   "fieldname": "after_img_1",
+   "fieldtype": "Attach Image",
+   "label": "Image 1"
+  },
+  {
+   "fieldname": "after_img_2",
+   "fieldtype": "Attach Image",
+   "label": "Image 2"
+  },
+  {
+   "fieldname": "after_img_3",
+   "fieldtype": "Attach Image",
+   "label": "Image 3"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-09-10 23:20:31.911105",
+ "max_attachments": 10,
+ "modified": "2025-09-15 18:04:18.356427",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
  "name": "Demande Car Glass",
@@ -50,5 +322,22 @@
  "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [
+  {
+   "color": "Red",
+   "title": "En attente"
+  },
+  {
+   "color": "Orange",
+   "title": "Pris en charge"
+  },
+  {
+   "color": "Yellow",
+   "title": "En suivi"
+  },
+  {
+   "color": "Gray",
+   "title": "Cloturee"
+  }
+ ]
 }

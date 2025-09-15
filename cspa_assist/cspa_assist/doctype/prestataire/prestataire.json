@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PR-{####}",
+ "creation": "2025-09-15 17:53:09.855760",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "infos_section",
+  "raison_sociale",
+  "numero",
+  "adresse",
+  "fiscale_section",
+  "rc",
+  "art",
+  "column_break_xgci",
+  "nif",
+  "nis"
+ ],
+ "fields": [
+  {
+   "fieldname": "infos_section",
+   "fieldtype": "Section Break",
+   "label": "Infos"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "raison_sociale",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Raison Sociale"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "numero",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Numero"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "adresse",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Adresse"
+  },
+  {
+   "fieldname": "fiscale_section",
+   "fieldtype": "Section Break",
+   "label": "Fiscale"
+  },
+  {
+   "fieldname": "rc",
+   "fieldtype": "Data",
+   "label": "RC"
+  },
+  {
+   "fieldname": "art",
+   "fieldtype": "Data",
+   "label": "ART"
+  },
+  {
+   "fieldname": "column_break_xgci",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nif",
+   "fieldtype": "Data",
+   "label": "NIF"
+  },
+  {
+   "fieldname": "nis",
+   "fieldtype": "Data",
+   "label": "NIS"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-15 18:08:10.797818",
+ "modified_by": "Administrator",
+ "module": "Cspa Assist",
+ "name": "Prestataire",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

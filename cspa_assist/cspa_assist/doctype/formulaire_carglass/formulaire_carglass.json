@@ -1,12 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:CARGLASS-{YYYY}-{#####}",
+ "autoname": "hash",
  "creation": "2025-09-10 22:17:25.937021",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "informations_de_lassur\u00e9__conducteur_section",
+  "column_break_rflc",
   "num_identit\u00e9_national",
   "prenom",
   "nom",
@@ -14,6 +15,7 @@
   "numero",
   "email",
   "d\u00e9tails_de_la_police_section",
+  "column_break_znep",
   "compagnie_dassurance",
   "num_de_police",
   "column_break_nsvr",
@@ -30,7 +32,8 @@
   "column_break_yceh",
   "img_permis",
   "column_break_axsq",
-  "img_carte_grise"
+  "img_carte_grise",
+  "amended_from"
  ],
  "fields": [
   {
@@ -39,6 +42,7 @@
    "label": " Informations de l'assur\u00e9 / conducteur"
   },
   {
+   "allow_in_quick_entry": 1,
    "columns": 2,
    "fieldname": "num_identit\u00e9_national",
    "fieldtype": "Data",
@@ -47,28 +51,33 @@
   {
    "fieldname": "prenom",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Prenom",
    "options": "Name"
   },
   {
    "fieldname": "nom",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Nom",
    "options": "Name"
   },
   {
    "fieldname": "column_break_ojdx",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "in_preview": 1
   },
   {
    "fieldname": "numero",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Numero",
    "options": "Phone"
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Email",
    "options": "Email"
   },
@@ -79,31 +88,35 @@
   },
   {
    "fieldname": "compagnie_dassurance",
-   "fieldtype": "Data",
-   "label": "Compagnie d'assurance"
+   "fieldtype": "Link",
+   "label": "Compagnie d'assurance",
+   "options": "Assurance"
   },
   {
    "fieldname": "num_de_police",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": " Num de Police "
   },
   {
    "fieldname": "column_break_nsvr",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "in_preview": 1
   },
   {
    "fieldname": "date_deffet",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": " Date d'effet "
   },
   {
    "fieldname": "date_d\u00e9ch\u00e9ance",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": " Date d'\u00e9ch\u00e9ance"
   },
   {
    "fieldname": "donn\u00e9es_v\u00e9hicule_section",
    "fieldtype": "Section Break",
+   "in_preview": 1,
    "label": " Donn\u00e9es V\u00e9hicule"
   },
   {
@@ -133,6 +146,7 @@
   {
    "fieldname": "image_des_documents_section",
    "fieldtype": "Section Break",
+   "in_preview": 1,
    "label": " Image des documents"
   },
   {
@@ -157,16 +171,37 @@
    "fieldname": "img_carte_grise",
    "fieldtype": "Attach Image",
    "label": " Image carte grise v\u00e9hicule"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Formulaire CarGlass",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_rflc",
+   "fieldtype": "Column Break",
+   "in_preview": 1
+  },
+  {
+   "fieldname": "column_break_znep",
+   "fieldtype": "Column Break",
+   "in_preview": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-09-10 23:10:11.660656",
+ "modified": "2025-09-15 16:27:44.965806",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
  "name": "Formulaire CarGlass",
- "naming_rule": "Expression",
+ "naming_rule": "Random",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,7 +1,7 @@
 {
  "app": "cspa_assist",
  "charts": [],
- "content": "[{\"id\":\"HhYv3lHBcV\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">CSPA Assistance</span>\",\"col\":12}},{\"id\":\"duuTeP3JfD\",\"type\":\"card\",\"data\":{\"card_name\":\"Formulaires\",\"col\":4}},{\"id\":\"3ILT-s-dTR\",\"type\":\"card\",\"data\":{\"card_name\":\"Dossiers\",\"col\":4}},{\"id\":\"AuPlRfUSnw\",\"type\":\"card\",\"data\":{\"card_name\":\"Administration\",\"col\":4}}]",
+ "content": "[{\"id\":\"HhYv3lHBcV\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Car Glass</span>\",\"col\":12}},{\"id\":\"duuTeP3JfD\",\"type\":\"card\",\"data\":{\"card_name\":\"Formulaires\",\"col\":4}},{\"id\":\"3ILT-s-dTR\",\"type\":\"card\",\"data\":{\"card_name\":\"Dossiers\",\"col\":4}},{\"id\":\"AuPlRfUSnw\",\"type\":\"card\",\"data\":{\"card_name\":\"Administration\",\"col\":4}}]",
  "creation": "2025-09-10 22:57:29.833163",
  "custom_blocks": [],
  "docstatus": 0,
@@ -57,7 +57,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Administration",
-   "link_count": 2,
+   "link_count": 4,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -81,9 +81,29 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Prestataire",
+   "link_count": 0,
+   "link_to": "Prestataire",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Services",
+   "link_count": 0,
+   "link_to": "Services",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-09-10 23:37:01.862557",
+ "modified": "2025-09-15 18:06:28.675808",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
  "name": "CSPA Assistance",
