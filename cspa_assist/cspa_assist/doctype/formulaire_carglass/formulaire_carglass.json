@@ -6,6 +6,14 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "column_break_amxp",
+  "etat",
+  "identification_du_sinistre_section",
+  "sinistre_id",
+  "sinistre_datetime",
+  "column_break_ykdi",
+  "lieu_daccident",
+  "ville",
   "informations_de_lassur\u00e9__conducteur_section",
   "column_break_rflc",
   "num_identit\u00e9_national",
@@ -191,13 +199,53 @@
    "fieldname": "column_break_znep",
    "fieldtype": "Column Break",
    "in_preview": 1
+  },
+  {
+   "fieldname": "identification_du_sinistre_section",
+   "fieldtype": "Section Break",
+   "label": "Identification du sinistre"
+  },
+  {
+   "fieldname": "sinistre_id",
+   "fieldtype": "Data",
+   "label": "Sinistre N\u00b0"
+  },
+  {
+   "fieldname": "sinistre_datetime",
+   "fieldtype": "Datetime",
+   "label": "Date & Heure d'accident"
+  },
+  {
+   "fieldname": "column_break_ykdi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lieu_daccident",
+   "fieldtype": "Data",
+   "label": "Lieu d'accident"
+  },
+  {
+   "fieldname": "ville",
+   "fieldtype": "Data",
+   "label": "Ville"
+  },
+  {
+   "fieldname": "etat",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Etat"
+  },
+  {
+   "fieldname": "column_break_amxp",
+   "fieldtype": "Column Break",
+   "hidden": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-09-15 16:27:44.965806",
+ "modified": "2025-10-15 18:10:33.940866",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
  "name": "Formulaire CarGlass",

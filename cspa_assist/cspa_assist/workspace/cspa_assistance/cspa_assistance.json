@@ -57,7 +57,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Administration",
-   "link_count": 4,
+   "link_count": 5,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -101,9 +101,19 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Types de vitrage",
+   "link_count": 0,
+   "link_to": "Type de vitrage",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-09-15 18:06:28.675808",
+ "modified": "2025-11-08 15:00:06.787199",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
  "name": "CSPA Assistance",

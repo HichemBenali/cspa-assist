@@ -6,6 +6,8 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "numero_de_sinistre",
+  "etat",
   "informations_de_lassur\u00e9__conducteur_section",
   "num_identit\u00e9_national",
   "prenom",
@@ -23,7 +25,7 @@
   "donn\u00e9es_v\u00e9hicule_section",
   "ref",
   "immatriculation",
-  "mod\u00e8le",
+  "modele",
   "column_break_jrle",
   "marque",
   "couleur",
@@ -33,10 +35,10 @@
   "img_permis",
   "column_break_axsq",
   "img_carte_grise",
-  "amended_from",
   "sinistre_tab",
   "description_du_sinistre",
   "services_tab",
+  "prestataire_principal",
   "services",
   "commentaires_tab",
   "commentaires",
@@ -49,7 +51,8 @@
   "apres_reparations_section",
   "after_img_1",
   "after_img_2",
-  "after_img_3"
+  "after_img_3",
+  "amended_from"
  ],
  "fields": [
   {
@@ -72,6 +75,8 @@
   {
    "fieldname": "nom",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Nom",
    "options": "Name"
   },
@@ -134,14 +139,9 @@
   {
    "fetch_from": "ref.marque",
    "fieldname": "marque",
-   "fieldtype": "Read Only",
-   "label": "Marque"
-  },
-  {
-   "fetch_from": "ref.modele",
-   "fieldname": "mod\u00e8le",
-   "fieldtype": "Read Only",
-   "label": "Mod\u00e8le"
+   "fieldtype": "Data",
+   "label": "Marque",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_jrle",
@@ -150,15 +150,19 @@
   {
    "fetch_from": "ref.immatriculation",
    "fieldname": "immatriculation",
-   "fieldtype": "Read Only",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Immatriculation",
-   "options": "Police Auto Data"
+   "read_only": 1
   },
   {
    "fetch_from": "ref.couleur",
    "fieldname": "couleur",
-   "fieldtype": "Read Only",
-   "label": "Couleur"
+   "fieldtype": "Data",
+   "label": "Couleur",
+   "read_only": 1
   },
   {
    "fieldname": "image_des_documents_section",
@@ -240,7 +244,7 @@
    "fieldname": "services",
    "fieldtype": "Table",
    "label": "Services",
-   "options": "Services Prestation Car Glass"
+   "options": "Vitrage"
   },
   {
    "fieldname": "commentaires",
@@ -292,14 +296,52 @@
    "fieldname": "after_img_3",
    "fieldtype": "Attach Image",
    "label": "Image 3"
+  },
+  {
+   "fieldname": "prestataire_principal",
+   "fieldtype": "Link",
+   "label": "Prestataire Principal",
+   "options": "Prestataire"
+  },
+  {
+   "fieldname": "numero_de_sinistre",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Numero de sinistre"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "etat",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Etat",
+   "options": "Pending\nWork\nFinished\nArchived",
+   "search_index": 1
+  },
+  {
+   "fetch_from": "ref.modele",
+   "fieldname": "modele",
+   "fieldtype": "Data",
+   "label": "Mod\u00e8le",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
- "links": [],
+ "links": [
+  {
+   "link_doctype": "Fiche Intervention CarGlass",
+   "link_fieldname": "dossier_carglass"
+  }
+ ],
  "max_attachments": 10,
- "modified": "2025-09-15 18:04:18.356427",
+ "modified": "2025-11-08 15:29:21.251848",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
  "name": "Demande Car Glass",

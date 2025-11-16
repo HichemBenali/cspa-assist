@@ -79,8 +79,13 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-09-15 18:08:10.797818",
+ "links": [
+  {
+   "link_doctype": "Demande Car Glass",
+   "link_fieldname": "prestataire_principal"
+  }
+ ],
+ "modified": "2025-10-15 16:48:19.665472",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
  "name": "Prestataire",
