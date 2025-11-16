@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-08 15:32:24.924274",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "type_de_vitre",
+  "prix"
+ ],
+ "fields": [
+  {
+   "fieldname": "type_de_vitre",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Type de vitre",
+   "options": "Type de vitrage"
+  },
+  {
+   "fieldname": "prix",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Prix"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-08 15:33:54.505214",
+ "modified_by": "Administrator",
+ "module": "Cspa Assist",
+ "name": "Facture Prestataire Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

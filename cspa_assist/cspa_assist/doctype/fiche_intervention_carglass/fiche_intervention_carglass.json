@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:dossier_carglass",
+ "creation": "2025-10-13 15:54:54.504465",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "dossier_carglass",
+  "prestataire",
+  "raison_social_prestataire",
+  "telephone",
+  "section_break_mefc",
+  "table_bynx",
+  "section_break_nkgq",
+  "marque_du_produit_install\u00e9",
+  "column_break_uygq",
+  "marque_du_produit_remplace",
+  "information_assur\u00e9_section",
+  "assur\u00e9",
+  "marque_du_v\u00e9hicule",
+  "column_break_nbhl",
+  "immatriculation",
+  "modele",
+  "section_break_ygye",
+  "signature_prestataire",
+  "column_break_sdir",
+  "signature_client",
+  "section_break_jrde",
+  "data_elpz"
+ ],
+ "fields": [
+  {
+   "fieldname": "dossier_carglass",
+   "fieldtype": "Link",
+   "label": "Dossier CarGlass",
+   "options": "Demande Car Glass",
+   "unique": 1
+  },
+  {
+   "fetch_from": "dossier_carglass.prestataire_principal",
+   "fieldname": "prestataire",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Prestataire",
+   "options": "Prestataire"
+  },
+  {
+   "fetch_from": "prestataire.numero",
+   "fieldname": "telephone",
+   "fieldtype": "Read Only",
+   "label": "Telephone"
+  },
+  {
+   "fieldname": "section_break_nkgq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "marque_du_produit_install\u00e9",
+   "fieldtype": "Data",
+   "label": "Marque du produit existant"
+  },
+  {
+   "fieldname": "column_break_uygq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "dossier_carglass.nom",
+   "fieldname": "assur\u00e9",
+   "fieldtype": "Read Only",
+   "label": "Assur\u00e9"
+  },
+  {
+   "fetch_from": "dossier_carglass.marque",
+   "fieldname": "marque_du_v\u00e9hicule",
+   "fieldtype": "Read Only",
+   "label": "Marque du v\u00e9hicule"
+  },
+  {
+   "fetch_from": "dossier_carglass.immatriculation",
+   "fieldname": "immatriculation",
+   "fieldtype": "Read Only",
+   "label": "Immatriculation"
+  },
+  {
+   "fieldname": "section_break_ygye",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "signature_prestataire",
+   "fieldtype": "Signature",
+   "label": "Prestataire"
+  },
+  {
+   "fieldname": "column_break_sdir",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "signature_client",
+   "fieldtype": "Signature",
+   "label": "Client / Assur\u00e9"
+  },
+  {
+   "fetch_from": "prestataire.raison_sociale",
+   "fieldname": "raison_social_prestataire",
+   "fieldtype": "Read Only",
+   "label": "Raison sociale du Prestataire"
+  },
+  {
+   "fieldname": "section_break_mefc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_bynx",
+   "fieldtype": "Table",
+   "label": "Vitrage(s) replac\u00e9(s)",
+   "options": "Vitrage"
+  },
+  {
+   "fieldname": "information_assur\u00e9_section",
+   "fieldtype": "Section Break",
+   "label": "Information Assur\u00e9"
+  },
+  {
+   "fetch_from": "dossier_carglass.modele",
+   "fieldname": "modele",
+   "fieldtype": "Read Only",
+   "label": "Modele"
+  },
+  {
+   "fieldname": "column_break_nbhl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jrde",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "dossier_carglass.image_1",
+   "fieldname": "data_elpz",
+   "fieldtype": "Attach Image",
+   "read_only": 1
+  },
+  {
+   "fieldname": "marque_du_produit_remplace",
+   "fieldtype": "Data",
+   "label": "Marque du produit remplace"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-08 14:06:26.686510",
+ "modified_by": "Administrator",
+ "module": "Cspa Assist",
+ "name": "Fiche Intervention CarGlass",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
