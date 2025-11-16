@@ -1,0 +1,57 @@
+{
+ "app": "cspa_assist",
+ "charts": [],
+ "content": "[{\"id\":\"hgkYAjL7ZA\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Partenaires</span>\",\"col\":12}},{\"id\":\"fzlgUe-0Ds\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Assurance\",\"col\":3}},{\"id\":\"35j8xKbDaV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Agences\",\"col\":3}},{\"id\":\"TJbm1i8z3L\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Directions Regionales\",\"col\":3}}]",
+ "creation": "2025-11-08 15:01:18.119680",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "money-coins-1",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Partenaires",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2025-11-08 15:03:50.180827",
+ "modified_by": "Administrator",
+ "module": "Cspa Assist",
+ "name": "Partenaires",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 25.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Assurance",
+   "link_to": "Assurance",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Agences",
+   "link_to": "Agence Assurance",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Directions Regionales",
+   "link_to": "Agence Assurance",
+   "stats_filter": "[[\"Agence Assurance\",\"est_direction_regionale\",\"=\",1,false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Partenaires",
+ "type": "Workspace"
+}

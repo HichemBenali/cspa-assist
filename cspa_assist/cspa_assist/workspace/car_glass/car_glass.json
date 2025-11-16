@@ -1,0 +1,157 @@
+{
+ "app": "cspa_assist",
+ "charts": [],
+ "content": "[{\"id\":\"HhYv3lHBcV\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Car Glass</span>\",\"col\":12}},{\"id\":\"UABPTpFvCJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Demande Car Glass\",\"col\":4}},{\"id\":\"iTiWYXcKOV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Formulaire Carglass\",\"col\":4}},{\"id\":\"Zz9Vy5eldW\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"duuTeP3JfD\",\"type\":\"card\",\"data\":{\"card_name\":\"Formulaires\",\"col\":6}},{\"id\":\"3ILT-s-dTR\",\"type\":\"card\",\"data\":{\"card_name\":\"Dossiers\",\"col\":6}},{\"id\":\"AuPlRfUSnw\",\"type\":\"card\",\"data\":{\"card_name\":\"Administration\",\"col\":6}}]",
+ "creation": "2025-09-10 22:57:29.833163",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 1,
+ "icon": "grid",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Car Glass",
+ "link_type": "DocType",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Administration",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Assurances",
+   "link_count": 0,
+   "link_to": "Assurance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Police Assurance Auto",
+   "link_count": 0,
+   "link_to": "Police Assurance Auto",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Prestataire",
+   "link_count": 0,
+   "link_to": "Prestataire",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Services",
+   "link_count": 0,
+   "link_to": "Services",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Formulaires",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Formulaire Car Glass",
+   "link_count": 0,
+   "link_to": "Formulaire CarGlass",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Formulaire Sinistre",
+   "link_count": 0,
+   "link_to": "Formulaire Sinistre",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Dossiers",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Demande Car Glass",
+   "link_count": 0,
+   "link_to": "Demande Car Glass",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fiches D'intervention",
+   "link_count": 0,
+   "link_to": "Fiche Intervention CarGlass",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-11-13 18:55:55.512484",
+ "modified_by": "Administrator",
+ "module": "Cspa Assist",
+ "name": "Car Glass",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Formulaire Carglass",
+   "link_to": "Formulaire CarGlass",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Demande Car Glass",
+   "link_to": "Demande Car Glass",
+   "stats_filter": "[[\"Demande Car Glass\",\"etat\",\"=\",\"Pending\",false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Car Glass",
+ "type": "Workspace"
+}
