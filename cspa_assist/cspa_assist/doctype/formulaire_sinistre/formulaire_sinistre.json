@@ -1,0 +1,391 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-13 09:10:23.361185",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_general",
+  "accident_date",
+  "accident_time",
+  "location",
+  "country",
+  "injuries",
+  "other_vehicle_damage",
+  "object_damage",
+  "witnesses",
+  "tab_a",
+  "a_section_assure",
+  "a_name",
+  "a_address",
+  "a_contact",
+  "a_section_vehicle",
+  "a_vehicle_make",
+  "a_vehicle_number",
+  "a_section_insurance",
+  "a_insurance_name",
+  "a_insurance_number",
+  "a_insurance_valid_from",
+  "a_insurance_valid_to",
+  "a_section_driver",
+  "a_driver_name",
+  "a_driver_license",
+  "a_driver_category",
+  "a_driver_license_expiry",
+  "a_section_circumstances",
+  "a_circumstances",
+  "a_vehicle_damage",
+  "a_observations",
+  "tab_b",
+  "b_section_assure",
+  "b_name",
+  "b_address",
+  "b_contact",
+  "b_section_vehicle",
+  "b_vehicle_make",
+  "b_vehicle_number",
+  "b_section_insurance",
+  "b_insurance_name",
+  "b_insurance_number",
+  "b_insurance_valid_from",
+  "b_insurance_valid_to",
+  "b_section_driver",
+  "b_driver_name",
+  "b_driver_license",
+  "b_driver_category",
+  "b_driver_license_expiry",
+  "b_section_circumstances",
+  "b_circumstances",
+  "b_vehicle_damage",
+  "b_observations",
+  "accident_sketch",
+  "signature_a",
+  "signature_b",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_general",
+   "fieldtype": "Section Break",
+   "label": "Informations g\u00e9n\u00e9rales"
+  },
+  {
+   "fieldname": "accident_date",
+   "fieldtype": "Date",
+   "label": "Date de l'accident"
+  },
+  {
+   "fieldname": "accident_time",
+   "fieldtype": "Time",
+   "label": "Heure"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Lieu"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Pays"
+  },
+  {
+   "default": "0",
+   "fieldname": "injuries",
+   "fieldtype": "Check",
+   "label": "Bless\u00e9s (m\u00eame l\u00e9gers)"
+  },
+  {
+   "default": "0",
+   "fieldname": "other_vehicle_damage",
+   "fieldtype": "Check",
+   "label": "D\u00e9g\u00e2ts mat\u00e9riels \u00e0 d'autres v\u00e9hicules"
+  },
+  {
+   "default": "0",
+   "fieldname": "object_damage",
+   "fieldtype": "Check",
+   "label": "D\u00e9g\u00e2ts \u00e0 des objets autres que v\u00e9hicules"
+  },
+  {
+   "fieldname": "witnesses",
+   "fieldtype": "Text",
+   "label": "T\u00e9moins (noms, adresses, t\u00e9l.)"
+  },
+  {
+   "fieldname": "tab_a",
+   "fieldtype": "Tab Break",
+   "label": "V\u00e9hicule A"
+  },
+  {
+   "fieldname": "a_section_assure",
+   "fieldtype": "Section Break",
+   "label": "Assur\u00e9 (A)"
+  },
+  {
+   "fieldname": "a_name",
+   "fieldtype": "Data",
+   "label": "Nom"
+  },
+  {
+   "fieldname": "a_address",
+   "fieldtype": "Small Text",
+   "label": "Adresse"
+  },
+  {
+   "fieldname": "a_contact",
+   "fieldtype": "Data",
+   "label": "T\u00e9l\u00e9phone ou e-mail"
+  },
+  {
+   "fieldname": "a_section_vehicle",
+   "fieldtype": "Section Break",
+   "label": "V\u00e9hicule (A)"
+  },
+  {
+   "fieldname": "a_vehicle_make",
+   "fieldtype": "Data",
+   "label": "Marque / Type"
+  },
+  {
+   "fieldname": "a_vehicle_number",
+   "fieldtype": "Data",
+   "label": "N\u00b0 Immatriculation"
+  },
+  {
+   "fieldname": "a_section_insurance",
+   "fieldtype": "Section Break",
+   "label": "Assurance (A)"
+  },
+  {
+   "fieldname": "a_insurance_name",
+   "fieldtype": "Data",
+   "label": "Nom de la soci\u00e9t\u00e9 d\u2019assurance"
+  },
+  {
+   "fieldname": "a_insurance_number",
+   "fieldtype": "Data",
+   "label": "N\u00b0 de contrat"
+  },
+  {
+   "fieldname": "a_insurance_valid_from",
+   "fieldtype": "Date",
+   "label": "Carte verte valable du"
+  },
+  {
+   "fieldname": "a_insurance_valid_to",
+   "fieldtype": "Date",
+   "label": "au"
+  },
+  {
+   "fieldname": "a_section_driver",
+   "fieldtype": "Section Break",
+   "label": "Conducteur (A)"
+  },
+  {
+   "fieldname": "a_driver_name",
+   "fieldtype": "Data",
+   "label": "Nom et pr\u00e9nom"
+  },
+  {
+   "fieldname": "a_driver_license",
+   "fieldtype": "Data",
+   "label": "Permis n\u00b0"
+  },
+  {
+   "fieldname": "a_driver_category",
+   "fieldtype": "Data",
+   "label": "Cat\u00e9gorie"
+  },
+  {
+   "fieldname": "a_driver_license_expiry",
+   "fieldtype": "Date",
+   "label": "Valable jusqu\u2019au"
+  },
+  {
+   "fieldname": "a_section_circumstances",
+   "fieldtype": "Section Break",
+   "label": "Circonstances (A)"
+  },
+  {
+   "fieldname": "a_circumstances",
+   "fieldtype": "Table",
+   "label": "Cochez les circonstances du v\u00e9hicule A",
+   "options": "circonstance_option"
+  },
+  {
+   "fieldname": "a_vehicle_damage",
+   "fieldtype": "Small Text",
+   "label": "D\u00e9g\u00e2ts apparents au v\u00e9hicule A"
+  },
+  {
+   "fieldname": "a_observations",
+   "fieldtype": "Small Text",
+   "label": "Observations A"
+  },
+  {
+   "fieldname": "tab_b",
+   "fieldtype": "Tab Break",
+   "label": "V\u00e9hicule B"
+  },
+  {
+   "fieldname": "b_section_assure",
+   "fieldtype": "Section Break",
+   "label": "Assur\u00e9 (B)"
+  },
+  {
+   "fieldname": "b_name",
+   "fieldtype": "Data",
+   "label": "Nom"
+  },
+  {
+   "fieldname": "b_address",
+   "fieldtype": "Small Text",
+   "label": "Adresse"
+  },
+  {
+   "fieldname": "b_contact",
+   "fieldtype": "Data",
+   "label": "T\u00e9l\u00e9phone ou e-mail"
+  },
+  {
+   "fieldname": "b_section_vehicle",
+   "fieldtype": "Section Break",
+   "label": "V\u00e9hicule (B)"
+  },
+  {
+   "fieldname": "b_vehicle_make",
+   "fieldtype": "Data",
+   "label": "Marque / Type"
+  },
+  {
+   "fieldname": "b_vehicle_number",
+   "fieldtype": "Data",
+   "label": "N\u00b0 Immatriculation"
+  },
+  {
+   "fieldname": "b_section_insurance",
+   "fieldtype": "Section Break",
+   "label": "Assurance (B)"
+  },
+  {
+   "fieldname": "b_insurance_name",
+   "fieldtype": "Data",
+   "label": "Nom de la soci\u00e9t\u00e9 d\u2019assurance"
+  },
+  {
+   "fieldname": "b_insurance_number",
+   "fieldtype": "Data",
+   "label": "N\u00b0 de contrat"
+  },
+  {
+   "fieldname": "b_insurance_valid_from",
+   "fieldtype": "Date",
+   "label": "Carte verte valable du"
+  },
+  {
+   "fieldname": "b_insurance_valid_to",
+   "fieldtype": "Date",
+   "label": "au"
+  },
+  {
+   "fieldname": "b_section_driver",
+   "fieldtype": "Section Break",
+   "label": "Conducteur (B)"
+  },
+  {
+   "fieldname": "b_driver_name",
+   "fieldtype": "Data",
+   "label": "Nom et pr\u00e9nom"
+  },
+  {
+   "fieldname": "b_driver_license",
+   "fieldtype": "Data",
+   "label": "Permis n\u00b0"
+  },
+  {
+   "fieldname": "b_driver_category",
+   "fieldtype": "Data",
+   "label": "Cat\u00e9gorie"
+  },
+  {
+   "fieldname": "b_driver_license_expiry",
+   "fieldtype": "Date",
+   "label": "Valable jusqu\u2019au"
+  },
+  {
+   "fieldname": "b_section_circumstances",
+   "fieldtype": "Section Break",
+   "label": "Circonstances (B)"
+  },
+  {
+   "fieldname": "b_circumstances",
+   "fieldtype": "Table",
+   "label": "Cochez les circonstances du v\u00e9hicule B",
+   "options": "circonstance_option"
+  },
+  {
+   "fieldname": "b_vehicle_damage",
+   "fieldtype": "Small Text",
+   "label": "D\u00e9g\u00e2ts apparents au v\u00e9hicule B"
+  },
+  {
+   "fieldname": "b_observations",
+   "fieldtype": "Small Text",
+   "label": "Observations B"
+  },
+  {
+   "fieldname": "accident_sketch",
+   "fieldtype": "Attach Image",
+   "label": "Croquis de l\u2019accident"
+  },
+  {
+   "fieldname": "signature_a",
+   "fieldtype": "Signature",
+   "label": "Signature conducteur A"
+  },
+  {
+   "fieldname": "signature_b",
+   "fieldtype": "Signature",
+   "label": "Signature conducteur B"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Formulaire Sinistre",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-10-13 09:52:02.621798",
+ "modified_by": "Administrator",
+ "module": "Cspa Assist",
+ "name": "Formulaire Sinistre",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
