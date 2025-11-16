@@ -1,0 +1,35 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-06 19:52:02.258646",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "type_de_vitrage"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "type_de_vitrage",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Type de vitrage",
+   "options": "Type de vitrage"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-06 19:54:16.906086",
+ "modified_by": "Administrator",
+ "module": "Cspa Assist",
+ "name": "Formulaire - Vitrage",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
