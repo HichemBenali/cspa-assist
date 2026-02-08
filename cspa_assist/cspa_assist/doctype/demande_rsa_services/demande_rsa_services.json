@@ -1,45 +1,41 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-11-08 15:32:24.924274",
+ "creation": "2026-01-03 14:57:40.638000",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "prestation",
-  "type_de_vitre",
-  "prix"
+  "services",
+  "qte"
  ],
  "fields": [
   {
-   "fieldname": "type_de_vitre",
+   "allow_in_quick_entry": 1,
+   "fieldname": "services",
    "fieldtype": "Link",
    "in_list_view": 1,
    "in_preview": 1,
-   "label": "Produit",
-   "options": "Type de vitrage"
+   "label": "Services",
+   "options": "Services"
   },
   {
-   "fieldname": "prix",
+   "allow_in_quick_entry": 1,
+   "fieldname": "qte",
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_preview": 1,
-   "label": "Prix"
-  },
-  {
-   "fieldname": "prestation",
-   "fieldtype": "Select",
-   "label": "Prestation",
-   "options": "RSA\nCG"
+   "label": "Qte"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-01-05 14:30:28.869324",
+ "modified": "2026-01-03 15:01:54.030915",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
- "name": "Facture Prestataire Items",
+ "name": "Demande RSA Services",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

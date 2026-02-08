@@ -1,37 +1,34 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:ref",
- "creation": "2025-11-06 19:46:12.966927",
+ "autoname": "field:designation",
+ "creation": "2025-11-18 16:01:53.188062",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "designation",
-  "ref"
+  "designation"
  ],
  "fields": [
   {
    "allow_in_quick_entry": 1,
    "fieldname": "designation",
    "fieldtype": "Data",
+   "in_filter": 1,
    "in_list_view": 1,
    "in_preview": 1,
-   "label": "Designation"
-  },
-  {
-   "fieldname": "ref",
-   "fieldtype": "Data",
-   "label": "Ref",
+   "in_standard_filter": 1,
+   "label": "Designation",
+   "reqd": 1,
    "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-18 17:00:11.670290",
+ "modified": "2025-11-18 17:10:33.385316",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
- "name": "Type de vitrage",
+ "name": "Car Brand",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
@@ -48,6 +45,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",

@@ -5,6 +5,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "type",
   "items"
  ],
  "fields": [
@@ -13,12 +14,18 @@
    "fieldtype": "Table",
    "label": "Items",
    "options": "Facture Prestataire Items"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "RSA\nCG"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-08 15:33:34.721306",
+ "modified": "2026-01-05 14:29:52.006990",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
  "name": "Facture Prestataire",

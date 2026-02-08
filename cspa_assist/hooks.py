@@ -12,15 +12,15 @@ app_icon = "icon.png"   # or path to your own
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "cspa_assist",
-# 		"logo": "/assets/cspa_assist/logo.png",
-# 		"title": "Cspa Assist",
-# 		"route": "/cspa_assist",
-# 		"has_permission": "cspa_assist.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "cspa_assist",
+		# "logo": "/assets/cspa_assist/logo.png",
+		"title": "Cspa Assist",
+		"route": "/cspa_assist",
+		# "has_permission": "cspa_assist.api.permission.has_app_permission"
+	}
+]
 
 # Includes in <head>
 # ------------------
@@ -58,7 +58,7 @@ app_icon = "icon.png"   # or path to your own
 # ----------
 
 # application home page (will override Website Settings)
-# home_page = "login"
+home_page = "app/cspa-assistance"
 
 # website user home page (by Role)
 # role_home_page = {

@@ -1,0 +1,245 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:dossier_rsa",
+ "creation": "2026-01-05 14:44:53.820232",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "dossier_rsa",
+  "1_d\u00e9placement_avec_remoqruage_section",
+  "deplacement_avec_remorquage",
+  "section_break_nlxy",
+  "infrieur_ou_egal_a_30km",
+  "column_break_lzjp",
+  "entre_31_et_50km",
+  "column_break_unfs",
+  "superieur_a_50km",
+  "2_d\u00e9placement_sans_remoqruage_section",
+  "deplacement_sans_remorquage",
+  "section_break_iesf",
+  "services",
+  "amended_from",
+  "section_break_jfzk",
+  "column_break_zgls",
+  "column_break_lnnr",
+  "roue_de_secours",
+  "batterie",
+  "cric_manivelle",
+  "poste_radio",
+  "autres_accessoires",
+  "column_break_xcwn",
+  "majorations_section",
+  "majorations",
+  "autres_prestations_section",
+  "small_text_btxt",
+  "montant_ttc_section",
+  "montant",
+  "section_break_pdid",
+  "le_prestataire_de_service",
+  "column_break_lrrz",
+  "le_beneficiaire"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "RSA Fiche Intervention",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "services",
+   "fieldtype": "Table MultiSelect",
+   "label": "Services",
+   "options": "RSA Services Intervention"
+  },
+  {
+   "default": "0",
+   "fieldname": "deplacement_avec_remorquage",
+   "fieldtype": "Check",
+   "label": "Deplacement avec remorquage"
+  },
+  {
+   "default": "0",
+   "fieldname": "deplacement_sans_remorquage",
+   "fieldtype": "Check",
+   "label": "Deplacement sans remorquage"
+  },
+  {
+   "fieldname": "1_d\u00e9placement_avec_remoqruage_section",
+   "fieldtype": "Section Break",
+   "label": "1. D\u00e9placement avec remoqruage"
+  },
+  {
+   "fieldname": "section_break_nlxy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "infrieur_ou_egal_a_30km",
+   "fieldtype": "Data",
+   "label": "Infrieur ou egal a 30Km"
+  },
+  {
+   "fieldname": "column_break_lzjp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "entre_31_et_50km",
+   "fieldtype": "Data",
+   "label": "entre 31 et 50Km"
+  },
+  {
+   "fieldname": "column_break_unfs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "superieur_a_50km",
+   "fieldtype": "Data",
+   "label": "Superieur a 50Km"
+  },
+  {
+   "fieldname": "section_break_iesf",
+   "fieldtype": "Section Break",
+   "label": "3. Depanage sur place"
+  },
+  {
+   "fieldname": "2_d\u00e9placement_sans_remoqruage_section",
+   "fieldtype": "Section Break",
+   "label": "2. D\u00e9placement sans remoqruage"
+  },
+  {
+   "fieldname": "section_break_jfzk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_zgls",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lnnr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "roue_de_secours",
+   "fieldtype": "Check",
+   "label": "Roue de secours"
+  },
+  {
+   "default": "0",
+   "fieldname": "batterie",
+   "fieldtype": "Check",
+   "label": "Batterie"
+  },
+  {
+   "default": "0",
+   "fieldname": "cric_manivelle",
+   "fieldtype": "Check",
+   "label": "Cric, Manivelle"
+  },
+  {
+   "default": "0",
+   "fieldname": "poste_radio",
+   "fieldtype": "Check",
+   "label": "Poste radio"
+  },
+  {
+   "default": "0",
+   "fieldname": "autres_accessoires",
+   "fieldtype": "Check",
+   "label": "Autres accessoires"
+  },
+  {
+   "fieldname": "column_break_xcwn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "majorations_section",
+   "fieldtype": "Section Break",
+   "label": "Majorations"
+  },
+  {
+   "default": "0",
+   "fieldname": "majorations",
+   "fieldtype": "Check",
+   "label": "Majorations"
+  },
+  {
+   "fieldname": "autres_prestations_section",
+   "fieldtype": "Section Break",
+   "label": "Autres prestations"
+  },
+  {
+   "fieldname": "small_text_btxt",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "montant_ttc_section",
+   "fieldtype": "Section Break",
+   "label": "Montant TTC"
+  },
+  {
+   "fieldname": "montant",
+   "fieldtype": "Data",
+   "label": "Montant"
+  },
+  {
+   "fieldname": "section_break_pdid",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "le_prestataire_de_service",
+   "fieldtype": "Signature",
+   "label": "Le prestataire de service"
+  },
+  {
+   "fieldname": "column_break_lrrz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "le_beneficiaire",
+   "fieldtype": "Signature",
+   "label": "Le beneficiaire"
+  },
+  {
+   "fieldname": "dossier_rsa",
+   "fieldtype": "Link",
+   "label": "Dossier RSA",
+   "options": "Demande RoadSide",
+   "unique": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-05 15:05:37.529393",
+ "modified_by": "Administrator",
+ "module": "Cspa Assist",
+ "name": "RSA Fiche Intervention",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

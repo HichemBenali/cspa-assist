@@ -1,38 +1,35 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:ref",
- "creation": "2025-11-06 19:46:12.966927",
+ "autoname": "format:{car_model} {designation}",
+ "creation": "2025-11-18 16:02:33.575420",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "designation",
-  "ref"
+  "car_model",
+  "designation"
  ],
  "fields": [
   {
-   "allow_in_quick_entry": 1,
-   "fieldname": "designation",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_preview": 1,
-   "label": "Designation"
+   "fieldname": "car_model",
+   "fieldtype": "Link",
+   "label": "Car Brand",
+   "options": "Car Brand"
   },
   {
-   "fieldname": "ref",
+   "fieldname": "designation",
    "fieldtype": "Data",
-   "label": "Ref",
-   "unique": 1
+   "label": "Designation"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-18 17:00:11.670290",
+ "modified": "2025-11-18 17:18:28.102920",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
- "name": "Type de vitrage",
- "naming_rule": "By fieldname",
+ "name": "Car Model VHL",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

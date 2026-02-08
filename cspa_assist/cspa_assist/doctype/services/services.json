@@ -6,9 +6,11 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "type",
   "ref",
   "designation",
-  "prix"
+  "prix",
+  "offres_inclus"
  ],
  "fields": [
   {
@@ -34,12 +36,27 @@
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Prix"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Type",
+   "options": "CG\nRSA"
+  },
+  {
+   "fieldname": "offres_inclus",
+   "fieldtype": "Table MultiSelect",
+   "label": "Offres Inclus",
+   "options": "Service Offre"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-15 17:55:23.590640",
+ "modified": "2026-01-03 15:19:10.448720",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
  "name": "Services",
@@ -62,5 +79,6 @@
  "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "designation"
 }

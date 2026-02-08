@@ -1,21 +1,42 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:PR-{####}",
+ "autoname": "format:PR-{type}-{####}",
  "creation": "2025-09-15 17:53:09.855760",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "type",
+  "contacts",
+  "numero_1",
+  "numero_2",
+  "column_break_ysof",
+  "numero_chauffeur",
+  "numero_chauffeur_2",
   "infos_section",
   "raison_sociale",
-  "numero",
   "adresse",
+  "email",
+  "nom",
+  "nombre_de_camion",
+  "column_break_bkbc",
+  "wilaya",
+  "daira",
+  "commune",
+  "pr\u00e9nom",
   "fiscale_section",
   "rc",
   "art",
+  "riprib",
   "column_break_xgci",
   "nif",
-  "nis"
+  "nis",
+  "section_break_dzyq",
+  "exp_ass",
+  "column_break_fcos",
+  "exp_pc",
+  "column_break_cwig",
+  "exp_con_technique"
  ],
  "fields": [
   {
@@ -30,14 +51,6 @@
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Raison Sociale"
-  },
-  {
-   "allow_in_quick_entry": 1,
-   "fieldname": "numero",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_preview": 1,
-   "label": "Numero"
   },
   {
    "allow_in_quick_entry": 1,
@@ -75,6 +88,125 @@
    "fieldname": "nis",
    "fieldtype": "Data",
    "label": "NIS"
+  },
+  {
+   "fieldname": "contacts",
+   "fieldtype": "Section Break",
+   "label": "Contacts"
+  },
+  {
+   "fieldname": "numero_1",
+   "fieldtype": "Data",
+   "label": "Numero 1",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "numero_2",
+   "fieldtype": "Data",
+   "label": "Numero 2"
+  },
+  {
+   "fieldname": "column_break_ysof",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "numero_chauffeur",
+   "fieldtype": "Data",
+   "label": "Numero Chauffeur",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "numero_chauffeur_2",
+   "fieldtype": "Data",
+   "label": "Numero Chauffeur 2",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "column_break_bkbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "wilaya",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Wilaya"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "daira",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Daira"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "commune",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Commune"
+  },
+  {
+   "fieldname": "riprib",
+   "fieldtype": "Data",
+   "label": "RIP/RIB"
+  },
+  {
+   "fieldname": "section_break_dzyq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "exp_ass",
+   "fieldtype": "Date",
+   "label": "Exp. Ass."
+  },
+  {
+   "fieldname": "exp_pc",
+   "fieldtype": "Date",
+   "label": "Exp. PC"
+  },
+  {
+   "fieldname": "exp_con_technique",
+   "fieldtype": "Date",
+   "label": "Exp. Con. Technique"
+  },
+  {
+   "fieldname": "column_break_fcos",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_cwig",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "RSA\nCG\nHOME\nCLINQ"
+  },
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "label": "Nom"
+  },
+  {
+   "fieldname": "pr\u00e9nom",
+   "fieldtype": "Data",
+   "label": "Pr\u00e9nom"
+  },
+  {
+   "fieldname": "nombre_de_camion",
+   "fieldtype": "Data",
+   "label": "Nombre de camions"
   }
  ],
  "grid_page_length": 50,
@@ -85,7 +217,7 @@
    "link_fieldname": "prestataire_principal"
   }
  ],
- "modified": "2025-10-15 16:48:19.665472",
+ "modified": "2026-01-28 20:05:23.832399",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
  "name": "Prestataire",

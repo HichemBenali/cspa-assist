@@ -6,6 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "column_break_lbrk",
   "compagnie_dassurance",
   "numero_de_police",
   "date_debut",
@@ -37,6 +38,7 @@
    "label": "Date echance"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "section_break_jshf",
    "fieldtype": "Section Break",
    "label": "V\u00e9hicules"
@@ -45,12 +47,17 @@
    "fieldname": "table_daub",
    "fieldtype": "Table",
    "options": "Police Auto Data"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "column_break_lbrk",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-15 15:51:26.267726",
+ "modified": "2026-01-29 19:21:54.409773",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
  "name": "Police Assurance Auto",

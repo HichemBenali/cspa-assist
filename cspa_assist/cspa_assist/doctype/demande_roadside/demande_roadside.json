@@ -1,0 +1,417 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RS-{code_assurance}-{YY}-{####}",
+ "creation": "2025-12-09 17:39:47.853847",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "etat",
+  "nature_de_la_panne",
+  "autre_raisons",
+  "descriptif_de_laccident",
+  "column_break_bjjw",
+  "cause",
+  "lieu_du_sinistre",
+  "lieu_de_sinistre",
+  "lieu_devacuation",
+  "section_break_maqc",
+  "prestataire",
+  "nom_du_prestataire",
+  "adresse",
+  "column_break_womn",
+  "num1",
+  "num2",
+  "num_chauf",
+  "informations_de_lassur\u00e9__conducteur_section",
+  "prenom",
+  "nom",
+  "column_break_ojdx",
+  "numero",
+  "email",
+  "d\u00e9tails_de_la_police_section",
+  "num_de_police",
+  "compagnie_dassurance",
+  "code_assurance",
+  "column_break_nsvr",
+  "date_deffet",
+  "date_d\u00e9ch\u00e9ance",
+  "donn\u00e9es_v\u00e9hicule_section",
+  "ref",
+  "column_break_jrle",
+  "image_des_documents_section",
+  "img_contrat",
+  "column_break_yceh",
+  "img_permis",
+  "column_break_axsq",
+  "img_carte_grise",
+  "sinistre_tab",
+  "description_du_sinistre",
+  "services_tab",
+  "services",
+  "commentaires_tab",
+  "commentaires",
+  "prestataire_tab",
+  "observations",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "informations_de_lassur\u00e9__conducteur_section",
+   "fieldtype": "Section Break",
+   "label": " Informations de l'assur\u00e9 / conducteur"
+  },
+  {
+   "fieldname": "prenom",
+   "fieldtype": "Data",
+   "label": "Prenom",
+   "options": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nom",
+   "options": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ojdx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "numero",
+   "fieldtype": "Data",
+   "label": "Numero",
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "d\u00e9tails_de_la_police_section",
+   "fieldtype": "Section Break",
+   "label": " D\u00e9tails de la police"
+  },
+  {
+   "fetch_from": "num_de_police.compagnie_dassurance",
+   "fetch_if_empty": 1,
+   "fieldname": "compagnie_dassurance",
+   "fieldtype": "Link",
+   "label": "Compagnie d'assurance",
+   "options": "Assurance"
+  },
+  {
+   "fieldname": "num_de_police",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": " Num de Police ",
+   "options": "Police Assurance Auto",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_nsvr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "num_de_police.date_debut",
+   "fieldname": "date_deffet",
+   "fieldtype": "Read Only",
+   "label": " Date d'effet "
+  },
+  {
+   "fetch_from": "num_de_police.date_echance",
+   "fieldname": "date_d\u00e9ch\u00e9ance",
+   "fieldtype": "Read Only",
+   "label": " Date d'\u00e9ch\u00e9ance"
+  },
+  {
+   "fieldname": "donn\u00e9es_v\u00e9hicule_section",
+   "fieldtype": "Section Break",
+   "label": " Donn\u00e9es V\u00e9hicule"
+  },
+  {
+   "fieldname": "column_break_jrle",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_des_documents_section",
+   "fieldtype": "Section Break",
+   "label": " Image des documents"
+  },
+  {
+   "fieldname": "img_contrat",
+   "fieldtype": "Attach Image",
+   "label": " Image Contrat assurance"
+  },
+  {
+   "fieldname": "column_break_yceh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "img_permis",
+   "fieldtype": "Attach Image",
+   "label": " Image de permis de conduire"
+  },
+  {
+   "fieldname": "column_break_axsq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "img_carte_grise",
+   "fieldtype": "Attach Image",
+   "label": " Image carte grise v\u00e9hicule"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Demande RoadSide",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "compagnie_dassurance.code",
+   "fieldname": "code_assurance",
+   "fieldtype": "Read Only",
+   "label": "Code Assurance",
+   "options": "Assurance"
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": " Ref",
+   "link_filters": "[\n  [\"Police Auto Data\", \"Parent\", \"=\", \"eval:doc.num_de_police\"]\n]\n",
+   "options": "Police Auto Data"
+  },
+  {
+   "fieldname": "sinistre_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sinistre"
+  },
+  {
+   "fieldname": "description_du_sinistre",
+   "fieldtype": "Long Text",
+   "label": "Description du sinistre"
+  },
+  {
+   "fieldname": "services_tab",
+   "fieldtype": "Tab Break",
+   "label": "Services"
+  },
+  {
+   "fieldname": "commentaires_tab",
+   "fieldtype": "Tab Break",
+   "label": "Commentaires"
+  },
+  {
+   "fieldname": "prestataire_tab",
+   "fieldtype": "Tab Break",
+   "label": "Prestataire"
+  },
+  {
+   "fieldname": "commentaires",
+   "fieldtype": "Table",
+   "label": "Commentaires",
+   "options": "Commentaires Prestation"
+  },
+  {
+   "fieldname": "observations",
+   "fieldtype": "Small Text",
+   "label": "Observations"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "etat",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Etat",
+   "options": "Pending\nWork\nFinished\nArchived",
+   "search_index": 1
+  },
+  {
+   "fieldname": "cause",
+   "fieldtype": "Select",
+   "label": "Cause",
+   "options": "Panne\nAccident"
+  },
+  {
+   "depends_on": "eval: doc.cause == 'Panne';",
+   "fieldname": "nature_de_la_panne",
+   "fieldtype": "Select",
+   "label": "Nature de la panne",
+   "options": "Battrie\nPanne seche\nNe d\u00e9marre pas\nCreuvaison\nProbleme electriaque\nAutre"
+  },
+  {
+   "depends_on": "eval: doc.cause == 'Accident';",
+   "fieldname": "descriptif_de_laccident",
+   "fieldtype": "Data",
+   "label": "Descriptif de l'accident"
+  },
+  {
+   "depends_on": "eval: !doc.__islocal",
+   "fieldname": "prestataire",
+   "fieldtype": "Link",
+   "label": "Prestataire",
+   "link_filters": "[\r\n  [\"Prestataire\", \"Wilaya\", \"=\", \"eval:doc.lieu_du_sinistre\"]\r\n]\r\n",
+   "options": "Prestataire"
+  },
+  {
+   "fieldname": "services",
+   "fieldtype": "Table",
+   "label": "Services",
+   "options": "Demande RSA Services"
+  },
+  {
+   "depends_on": "eval: doc.nature_de_la_panne == 'Autre';",
+   "fieldname": "autre_raisons",
+   "fieldtype": "Data",
+   "label": "Autre raisons"
+  },
+  {
+   "fieldname": "lieu_du_sinistre",
+   "fieldtype": "Link",
+   "label": "Wilaya du sinisitre",
+   "options": "Wilaya",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lieu_de_sinistre",
+   "fieldtype": "Data",
+   "label": "Lieu de sinistre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lieu_devacuation",
+   "fieldtype": "Data",
+   "label": "Lieu d'evacuation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bjjw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "prestataire.numero_1",
+   "fieldname": "num1",
+   "fieldtype": "Data",
+   "label": "Num1",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "prestataire.numero_2",
+   "fieldname": "num2",
+   "fieldtype": "Data",
+   "label": "Num2",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "prestataire.numero_chauffeur",
+   "fieldname": "num_chauf",
+   "fieldtype": "Data",
+   "label": "Num Chauf",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_maqc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "prestataire.nom",
+   "fieldname": "nom_du_prestataire",
+   "fieldtype": "Data",
+   "label": "Nom",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_womn",
+   "fieldtype": "Column Break",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "prestataire.adresse",
+   "fieldname": "adresse",
+   "fieldtype": "Data",
+   "label": "Adresse",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-08 20:46:24.267886",
+ "modified_by": "Administrator",
+ "module": "Cspa Assist",
+ "name": "Demande RoadSide",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operateur RSA",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "En Attente"
+  },
+  {
+   "color": "Cyan",
+   "title": "Pris en charge"
+  },
+  {
+   "color": "Purple",
+   "title": "Sur Camion"
+  },
+  {
+   "color": "Green",
+   "title": "SVC Fait"
+  },
+  {
+   "color": "Orange",
+   "title": "QC"
+  },
+  {
+   "color": "Gray",
+   "title": "Archive"
+  }
+ ]
+}

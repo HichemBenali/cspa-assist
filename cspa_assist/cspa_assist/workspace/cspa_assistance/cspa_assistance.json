@@ -1,7 +1,7 @@
 {
  "app": "cspa_assist",
  "charts": [],
- "content": "[{\"id\":\"HhYv3lHBcV\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Car Glass</span>\",\"col\":12}},{\"id\":\"duuTeP3JfD\",\"type\":\"card\",\"data\":{\"card_name\":\"Formulaires\",\"col\":4}},{\"id\":\"3ILT-s-dTR\",\"type\":\"card\",\"data\":{\"card_name\":\"Dossiers\",\"col\":4}},{\"id\":\"AuPlRfUSnw\",\"type\":\"card\",\"data\":{\"card_name\":\"Administration\",\"col\":4}}]",
+ "content": "[{\"id\":\"HhYv3lHBcV\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Car Glass</span>\",\"col\":12}},{\"id\":\"duuTeP3JfD\",\"type\":\"card\",\"data\":{\"card_name\":\"Formulaires\",\"col\":4}},{\"id\":\"3ILT-s-dTR\",\"type\":\"card\",\"data\":{\"card_name\":\"Dossiers\",\"col\":4}},{\"id\":\"AuPlRfUSnw\",\"type\":\"card\",\"data\":{\"card_name\":\"Administration\",\"col\":4}},{\"id\":\"wiZ4QPfjRM\",\"type\":\"card\",\"data\":{\"card_name\":\"Administration RSA\",\"col\":4}},{\"id\":\"N5HXY2YjZz\",\"type\":\"card\",\"data\":{\"card_name\":\"Administration Systeme\",\"col\":4}}]",
  "creation": "2025-09-10 22:57:29.833163",
  "custom_blocks": [],
  "docstatus": 0,
@@ -30,25 +30,6 @@
    "label": "Formulaire Car Glass",
    "link_count": 0,
    "link_to": "Formulaire CarGlass",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Dossiers",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Demande Car Glass",
-   "link_count": 0,
-   "link_to": "Demande Car Glass",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -111,9 +92,76 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Dossiers",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Demande Car Glass",
+   "link_count": 0,
+   "link_to": "Demande Car Glass",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Demande RoadSide",
+   "link_count": 0,
+   "link_to": "Demande RoadSide",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Administration RSA",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Offres RSA",
+   "link_count": 0,
+   "link_to": "Offres",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Administration Systeme",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "User",
+   "link_count": 0,
+   "link_to": "User",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-11-08 15:00:06.787199",
+ "modified": "2026-01-29 18:56:14.946229",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
  "name": "CSPA Assistance",
@@ -123,7 +171,7 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 23.0,
+ "sequence_id": 5.0,
  "shortcuts": [],
  "title": "CSPA Assistance",
  "type": "Workspace"

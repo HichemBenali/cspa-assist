@@ -1,37 +1,40 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:ref",
- "creation": "2025-11-06 19:46:12.966927",
+ "autoname": "field:designation",
+ "creation": "2025-12-29 10:47:18.895688",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "designation",
-  "ref"
+  "compagnie_dassurance"
  ],
  "fields": [
   {
-   "allow_in_quick_entry": 1,
    "fieldname": "designation",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "in_preview": 1,
-   "label": "Designation"
+   "in_standard_filter": 1,
+   "label": "Designation",
+   "unique": 1
   },
   {
-   "fieldname": "ref",
-   "fieldtype": "Data",
-   "label": "Ref",
-   "unique": 1
+   "fieldname": "compagnie_dassurance",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Compagnie D'assurance",
+   "options": "Assurance"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-18 17:00:11.670290",
+ "modified": "2025-12-29 11:42:12.651835",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
- "name": "Type de vitrage",
+ "name": "Offres",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
