@@ -10,9 +10,7 @@
   "compagnie_dassurance",
   "numero_de_police",
   "date_debut",
-  "date_echance",
-  "section_break_jshf",
-  "table_daub"
+  "date_echance"
  ],
  "fields": [
   {
@@ -39,25 +37,19 @@
   },
   {
    "allow_in_quick_entry": 1,
-   "fieldname": "section_break_jshf",
-   "fieldtype": "Section Break",
-   "label": "V\u00e9hicules"
-  },
-  {
-   "fieldname": "table_daub",
-   "fieldtype": "Table",
-   "options": "Police Auto Data"
-  },
-  {
-   "allow_in_quick_entry": 1,
    "fieldname": "column_break_lbrk",
    "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2026-01-29 19:21:54.409773",
+ "links": [
+  {
+   "link_doctype": "Police Auto Data",
+   "link_fieldname": "police_auto"
+  }
+ ],
+ "modified": "2026-02-09 14:17:22.963892",
  "modified_by": "Administrator",
  "module": "Cspa Assist",
  "name": "Police Assurance Auto",

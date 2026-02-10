@@ -12,21 +12,20 @@ frappe.ui.form.on("Demande RoadSide", {
     },
 
 
-	num_de_police: function(frm) {
-        // Clear the ref field first
-        frm.set_value('ref', null);
+	ref: function(frm) {
+        // Clear the num_de_police field first
+        frm.set_value('num_de_police', null);
 
-        // Get matching options
-        frappe.db.get_list('Police Auto Data', {
-            filters: { parent: frm.doc.num_de_police },
-            fields: ['name'],
-			ignore_permissions: true
-        }).then(options => {
-            if (options.length === 1) {
-                // If only one option, set it automatically
-                frm.set_value('ref', options[0].name);
-            }
-        });
+        if (frm.doc.ref) {
+            // Look for the record in Police Auto Data
+            frappe.db.get_value('Police Auto Data', { name: frm.doc.ref }, 'parent')
+            .then(r => {
+                if (r.message && r.message.parent) {
+                    // Set num_de_police to the parent value
+                    frm.set_value('num_de_police', r.message.parent);
+                }
+            });
+        }
     },
 
 
