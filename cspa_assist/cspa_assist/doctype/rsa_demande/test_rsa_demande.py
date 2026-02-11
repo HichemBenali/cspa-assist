@@ -13,9 +13,9 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestDemandeRoadSide(IntegrationTestCase):
+class IntegrationTestRSADemande(IntegrationTestCase):
 	"""
-	Integration tests for DemandeRoadSide.
+	Integration tests for RSADemande.
 	Use this class for testing interactions between multiple components.
 	"""
 

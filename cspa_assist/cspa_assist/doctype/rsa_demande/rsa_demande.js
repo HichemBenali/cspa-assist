@@ -1,7 +1,7 @@
 // Copyright (c) 2025, SARL MYNDALL and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on("Demande RoadSide", {
+frappe.ui.form.on("RSA Demande", {
 
 	 after_workflow_action(frm) {
         if (frm.doc.workflow_state === "SVC Fait") {

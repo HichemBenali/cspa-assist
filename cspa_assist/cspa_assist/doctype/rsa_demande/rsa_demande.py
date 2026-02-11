@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class DemandeRoadSide(Document):
+class RSADemande(Document):
 	pass
